@@ -1,11 +1,13 @@
 # T-Rez-Owens.github.io
 This is the main page for hosting my profile/portfolio.
 
-see https://t-rez-owens.github.io/Trezor  for my main profile.
+Main profile and *certifications.*: https://t-rez-owens.github.io/Trezor
 
-Porfolio:
+## Porfolio:
 
-see https://t-rez-owens.github.io/travel-site/ for the site I styled. (I wrote all the CSS and JS with the help of a tuturial and many automation tools like gulp, postcss, babel, etc.)
+[This links to my mobile first responsive travel-site](https://t-rez-owens.github.io/travel-site/) 
+
+It was created to familiarize myself with HTML, CSS, JS and utilized many automation tools like gulp, postcss, babel, etc.</p>
 
 
 
