@@ -1,8 +1,9 @@
 # T-Rez-Owens.github.io
 This is the main page for hosting my profile/portfolio.
 
-Main profile and *certifications.*: https://t-rez-owens.github.io/Trezor
+[Blog](https://t-rez-owens.github.io/Trezor)
 
+[Main profile and *certifications.*](https://t-rez-owens.github.io/)
 ## Porfolio:
 
 [This links to my mobile first responsive travel-site](https://t-rez-owens.github.io/travel-site/) 
