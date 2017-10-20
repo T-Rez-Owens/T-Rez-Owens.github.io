@@ -42,6 +42,8 @@ gulp.task('optimizeImages',['deletedocsFolder'],function() {
         progressive: true,
         interlaces: true,
         multipass: true
+    },{
+        verbose: true
     }))
     .pipe(gulp.dest("./docs/assets/images"));
 });
