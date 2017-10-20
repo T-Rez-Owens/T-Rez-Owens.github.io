@@ -3,7 +3,6 @@ imageMin = require('gulp-imagemin'),
 del = require('del'),
 usemin = require('gulp-usemin'),
 rev = require('gulp-rev'),
-cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
@@ -24,6 +23,7 @@ gulp.task('deletedocsFolder',function(){
 gulp.task('copyGeneralFiles', ['deletedocsFolder'],function(){
     var pathsToCopy = [
         './app/**/*',
+        './app/temp/styles*.css',
         '!./app/index.html',
         '!./app/assets/scripts/*',
         '!./app/assets/scripts/**/*',
@@ -36,7 +36,7 @@ gulp.task('copyGeneralFiles', ['deletedocsFolder'],function(){
     .pipe(gulp.dest("./docs"));
 });
 
-gulp.task('optimizeImages',['deletedocsFolder','icons'],function() {
+gulp.task('optimizeImages',['deletedocsFolder'],function() {
     return gulp.src(["./app/assets/images/**/*", '!./app/assets/images/icons',"!./app/assets/images/icons/**/*"])
     .pipe(imageMin({
         progressive: true,
@@ -49,8 +49,7 @@ gulp.task('optimizeImages',['deletedocsFolder','icons'],function() {
 gulp.task('usemin',['deletedocsFolder', 'css','scripts'],function(){
     return gulp.src("./app/index.html")
     .pipe(usemin({
-        css: [function() {return rev()}, function() {return cssnano()}],
-        js: [function(){return rev()}, function(){return uglify()}]
+        js: [function(){return rev();}, function(){return uglify();}]
     }))
     .pipe(gulp.dest("./docs/"));
 });
