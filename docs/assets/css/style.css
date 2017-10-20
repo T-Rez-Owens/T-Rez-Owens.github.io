@@ -177,7 +177,7 @@ blockquote{
 body{
     margin:0;
     padding:0;
-    background:#151515 url("../images/moon-jelly.png") no-repeat fixed center;
+    background:#151515 url("./docs/assets/images/moon-jelly.png") no-repeat fixed center;
     color:#eaeaea;
     font-size:16px;
     line-height:1.5;
