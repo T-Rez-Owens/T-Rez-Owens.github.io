@@ -6,7 +6,7 @@ rev = require('gulp-rev'),
 uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
-gulp.task('previewdocs',function(){
+gulp.task('previewDocs',['build'],function(){
     browserSync.init({
 		notify: false,
 		server: {
