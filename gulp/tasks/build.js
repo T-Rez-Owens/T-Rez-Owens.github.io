@@ -60,4 +60,4 @@ gulp.task('usemin',['deletedocsFolder', 'css','scripts'],function(){
     .pipe(gulp.dest("./docs/"));
 });
 
-gulp.task('build',['deletedocsFolder','usemin','copyGeneralFiles']);
+gulp.task('build',['deletedocsFolder','optimizeImages','usemin','copyGeneralFiles']);
