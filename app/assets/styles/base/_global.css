@@ -1,0 +1,141 @@
+
+    /*element start*/
+
+
+/* b */
+blockquote{
+    color:#aaa;
+    padding-left:10px;
+    border-left:1px dotted #666;
+}
+
+
+
+body{
+    margin:0;
+    padding:0;
+    background:#151515 url("../../assets/images/moon-jelly-small.png") no-repeat fixed center;
+    background-size: 100%;
+    color:#eaeaea;
+    font-size:16px;
+    line-height:1.5;
+    font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    text-align: center;
+}
+
+/* d */
+dt{
+    font-style:italic;
+    font-weight:bold;
+}    
+
+/* h */
+h1,h2,h3,h4,h5,h6{margin:0 0 20px}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color:#b5e853;
+    letter-spacing:-0.03em;
+    text-shadow:0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1)
+}
+
+header{
+    background:rgba(0,0,0,0.1);width:100%;border-bottom:1px dashed #b5e853;padding:20px 0;margin:0 0 40px 0
+}
+
+header h1{
+    font-size:30px;
+    line-height:1.5;
+    margin:0 0 0 -40px;
+    font-weight:bold;
+    font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;color:#b5e853;
+    text-shadow:0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+    letter-spacing:-1px;
+    -webkit-font-smoothing:antialiased}
+header h1:before{content:"./ ";font-size:24px}
+header h2{font-size:18px;font-weight:300;color:#666}
+
+hr{
+    height:0;border:0;border-bottom:1px dashed #b5e853;color:#b5e853
+}
+
+/* i */
+
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* l */
+
+li{
+    line-height:1.4
+}
+
+/* o */
+
+/* p */
+p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+p,h1,h2,h3 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+picture {
+    display: block;
+    margin-left: 16.4%;
+    margin-right: 16.4%;
+}
+
+pre{
+    background:rgba(0,0,0,0.9);
+    border:1px solid rgba(255,255,255,0.15);
+    padding:10px;
+    font-size:16px;
+    color:#b5e853;
+    border-radius:2px;
+    text-wrap:normal;
+    overflow:auto;
+    overflow-y:hidden
+}
+
+/* s */
+
+section{display:block;margin:0 0 20px 0}
+
+section img{max-width:100%}
+
+/* t */
+
+table{
+    width:100%;
+    margin:0 0 20px 0
+}
+th{
+    text-align:left;border-bottom:1px dashed #b5e853;
+    padding:5px 10px
+}
+td{
+    padding:5px 10px
+}
+
+/* u */
+ul {
+    width: auto;
+    display: inline-block;
+    margin: auto;
+}
+ul li{
+    list-style-image:url("../../assets/images/bullet.png");
+    text-align: left;
+    font-size: 1.2rem;
+    
+    @mixin atLarge {
+        font-size: 1.7rem;
+    }
+}
+

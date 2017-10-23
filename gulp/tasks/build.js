@@ -24,7 +24,7 @@ gulp.task('copyGeneralFiles', ['deletedocsFolder'],function(){
     var pathsToCopy = [
         './app/**/*',
         './app/temp/styles*.css',
-        './app/assets/styles/fonts/**/*',
+        './app/temp/styles/fonts/**/*',
         '!./app/index.html',
         '!./app/assets/scripts/*',
         '!./app/assets/scripts/**/*',
@@ -34,7 +34,8 @@ gulp.task('copyGeneralFiles', ['deletedocsFolder'],function(){
         '!./app/assets/styles/module*/**',
         '!./app/assets/styles/style.css',
         '!./app/temp',
-        '!./app/temp/**'
+        '!./app/temp/**',
+        '!./app/temp/**/*',
     ];
     return gulp.src(pathsToCopy)
     .pipe(gulp.dest("./docs"));

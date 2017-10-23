@@ -2,7 +2,8 @@
   "name": "data-stream-visualization",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

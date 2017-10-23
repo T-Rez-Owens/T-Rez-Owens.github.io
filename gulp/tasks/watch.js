@@ -28,8 +28,8 @@ gulp.task('watch', function(){
 });
     
 gulp.task('cssInject', ['css'],function() {
-    return gulp.src('./app/temp/styles/styles.css')
-    .pipe(browserSync.stream());
+    return gulp.src('./app/temp/styles/style.css')
+	.pipe(browserSync.stream());
 });
 
 gulp.task('scriptsRefresh',['scripts'],function(){

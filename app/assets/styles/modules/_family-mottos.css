@@ -1,0 +1,11 @@
+
+.family-mottos {
+    color: #b5e853;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+    @mixin atLarge {
+        font-size: 1.7rem;
+    }
+    
+}
