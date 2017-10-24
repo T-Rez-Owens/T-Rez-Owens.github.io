@@ -10,7 +10,7 @@ gulp.task('previewDocs',['build'],function(){
     browserSync.init({
 		notify: false,
 		server: {
-			baseDir: "docs"
+			baseDir: ""
 		}
 	
 	});
@@ -29,25 +29,25 @@ gulp.task('copyGeneralFiles', ['deletedocsFolder'],function(){
         '!./app/assets/scripts/*',
         '!./app/assets/scripts/**/*',
         '!./app/assets/images/**',
-        '!./app/assets/styles/bas*',
+        '!./app/assets/styles/base',
+        '!./app/assets/styles/base/*',
         '!./app/assets/styles/module*',
         '!./app/assets/styles/module*/**',
         '!./app/assets/styles/style.css',
         '!./app/temp',
         '!./app/temp/**',
         '!./app/temp/**/*',
+        '!./app/assets/styles/fonts/specimen_files',
+        '!./app/assets/styles/fonts/specimen_files/*',
+        '!./app/assets/styles/fonts/*.txt',
+        '!./app/assets/styles/fonts/*.html',
+        '!./app/assets/styles/fonts/*.ttf',
+        '!./app/assets/styles/fonts/*.css',
+        './app/assets/styles/fonts/*.woff',
+        './app/assets/styles/fonts/*.woff2',
     ];
     return gulp.src(pathsToCopy)
     .pipe(gulp.dest("./docs"));
-});
-
-gulp.task('updateIndex', ['usemin'], function(){
-    var pathsToCopy = [
-        './docs/*',
-        '!./docs/assets'
-    ];
-    return gulp.src(pathsToCopy)
-    .pipe(gulp.dest("./"));
 });
 
 gulp.task('optimizeImages',['deletedocsFolder'],function() {
@@ -68,7 +68,7 @@ gulp.task('usemin',['deletedocsFolder', 'css','scripts'],function(){
         css: [function(){return rev();}],
         js: [function(){return rev();}, function(){return uglify();}]
     }))
-    .pipe(gulp.dest("./docs/"));
+    .pipe(gulp.dest("./"));
 });
 
-gulp.task('build',['deletedocsFolder','optimizeImages','usemin','copyGeneralFiles','favicon','updateIndex']);
+gulp.task('build',['deletedocsFolder','optimizeImages','usemin','copyGeneralFiles','favicon']);
