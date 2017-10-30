@@ -1,0 +1,26 @@
+TODO:
+    Workflow:
+        ✔ Create a TODO System @done (10/30/2017, 11:52:28 AM)
+        ☐ Create a nice summary of what I have learned as a reference guide for myself.
+    Github Site:
+        ☐ Fix Clunky page @broken
+        Glitch:
+            ☐ Finish Visualization for Clunky Database @unpresentable
+        ☐ Create observable with datastream 
+        ☐ Switch from MongoDB to InfluxDB
+        ☐ Switch from InfluxDB to PostgreSQL
+            ☐ Learn in depth: 
+                Table structure, HEAP vs Clustered
+                Datatypes - CHARS vs VARCHAR, INT, BIGINT and etc
+                Indexes - Clustered vs Non-clustered
+                Truncate vs Delete
+                Stored Procedures
+                Keys and constraints - Primary, Foreign, Unique and etc.
+            
+        ☐ Pick favorite DB backend
+            ☐ Learn Vue and integrate it with that backend to create a stunning mobile friendly implementation
+
+Tagging:
+    * You can add tags using @ sign, like this @tag
+    * You can use following pre-existing tags to mark tasks @critical @high @low @today 
+    ☐ * Auto intellisense is provided to help you in finding tags
