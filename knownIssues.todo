@@ -6,6 +6,7 @@ TODO:
         ✔ Fix Clunky page @broken @done (10/31/2017, 6:25:41 AM)
         Glitch:
             ☐ Finish Visualization for Clunky Database @unpresentable
+            ☐ Clone to local, set up a .env to store creds.
         ☐ Create observable with datastream 
         ☐ Switch from MongoDB to InfluxDB
         ☐ Switch from InfluxDB to PostgreSQL
@@ -19,8 +20,9 @@ TODO:
             
         ☐ Pick favorite DB backend
             ☐ Learn Vue and integrate it with that backend to create a stunning mobile friendly implementation
+        ☐ Learn an API for js/node
 
-Tagging:
-    * You can add tags using @ sign, like this @tag
-    * You can use following pre-existing tags to mark tasks @critical @high @low @today 
-    ☐ * Auto intellisense is provided to help you in finding tags
+
+    MityLite Site:
+        ☐ Filter the list of filters based on the previous filters selected.
+            ☐ Vue filters the options on clicking on the heading, I want to have a dynamic list shown (like mcmaster-carr).
