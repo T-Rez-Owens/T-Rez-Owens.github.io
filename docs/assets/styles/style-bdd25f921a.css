@@ -688,3 +688,88 @@ ul li{
     width: 80%;
     margin: auto;
 }
+
+@-webkit-keyframes spin { to { -webkit-transform: rotate(1turn); transform: rotate(1turn); } }
+
+@keyframes spin { to { -webkit-transform: rotate(1turn); transform: rotate(1turn); } }
+
+@-webkit-keyframes radius { 100% { border-radius: 100%; } }
+
+@keyframes radius { 100% { border-radius: 100%; } }
+
+@-webkit-keyframes color { 33% { color: MediumSpringGreen; } 66% { color: DarkGreen} }
+
+@keyframes color { 33% { color: MediumSpringGreen; } 66% { color: DarkGreen} }
+
+@-webkit-keyframes width { 90% { border-width: 3em; } }
+
+@keyframes width { 90% { border-width: 3em; } }
+
+@-webkit-keyframes opacity{100% {opacity:0}}
+
+@keyframes opacity{100% {opacity:0}}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    content: "Loading";
+    color: black;
+    opacity: 40;
+    
+}
+
+.loading:before {
+    position: absolute;
+    width: 20em;
+	height: 20em;
+    top:25%;
+    left:50%;
+    margin:-10em 0 0 -10em;
+	content: '*\A*\A*\A*\A*\A*\A*\A*\A*\A*\A*\A*';
+	white-space:pre;
+	display: inline-block;
+	opacity: 100;
+	border-radius:75%;
+	border: .5em dotted;
+	color: DodgerBlue;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-animation: 2.5s spin, 7s radius, 5.71s color, 7s width;
+	        animation: 2.5s spin, 7s radius, 5.71s color, 7s width;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+.loading {
+    margin: auto;
+}
+
+.loading2:before {	
+    position: absolute;
+    width: 20em;
+	height: 20em;
+    top:25%;
+    left:50%;
+    margin:-10em 0 0 -10em;
+	content: '*\A*\A*\A*\A*\A*\A*\A*\A*\A*\A*\A*';
+	white-space: pre;	
+	display: inline-block;	
+	opacity: 100;	
+	border: .5em dashed;	
+	color: DodgerBlue;	
+	-webkit-box-sizing: border-box;	
+	        box-sizing: border-box;	
+	-webkit-animation: 1.5s spin, 7s radius, 5.71s color, 7s width, 10.5s opacity;	
+	        animation: 1.5s spin, 7s radius, 5.71s color, 7s width, 10.5s opacity;	
+	-webkit-animation-timing-function: linear;	
+	        animation-timing-function: linear;	-webkit-animation-iteration-count: infinite;	animation-iteration-count: infinite;
+}
+
+.loading2 {	margin: auto;}
